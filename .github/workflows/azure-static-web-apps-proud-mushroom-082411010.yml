@@ -24,7 +24,7 @@ jobs:
         env:
           SUBSCRIPTION_KEY: ${{ secrets.SUBSCRIPTION_KEY }}
         run: |
-          cat << 'EOF' > ./web-app/web-app/env-config.js
+          cat << EOF > ./web-app/web-app/env-config.js
           window.APP_CONFIG = {
             SUBSCRIPTION_KEY: "${SUBSCRIPTION_KEY}"
           };
